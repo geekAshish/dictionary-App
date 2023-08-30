@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Search */
+.container {
+    padding: 5em 10em;
+}
+
+.form {
+    margin-bottom: 3em;
+}
+
+#inputWord {
+    padding: 1em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
+    border-radius: 0 0 0 10px;
+    margin: .5em 0;
+}
+
+#btn {
+    padding: 1em;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    outline: none;
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 1em;
+
+    margin-left: 1em;
+}
+#btn:hover {
+    cursor: pointer;
+    background-color: rgb(198, 198, 198);
+    color: rgb(0, 0, 0);
+}
+
+
+.pronouns-audio {
+    margin: 0 2em;
+}
+
+
+
+.partOfSpeech {
+    padding: .5em;
+}
+
+.h-p {
+    padding: .4em 1em;
+}
+
+.one-padding{
+    padding: .5em 1em;
+}
+
+.pronouns-audio {
+    width: 250px;
+    height: 35px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
+.synonyms, .antonyms {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 400px) {
+    #btn {
+        padding: 1em 4em;
+        margin-left: 0em;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .flex {
+        flex-direction: column;
+    }
+    .word {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .container {
+        padding: 5em;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .container {
+        padding: 2em;
+    }
+}
